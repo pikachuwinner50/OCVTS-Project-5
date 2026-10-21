@@ -1,0 +1,81 @@
+.Lindon-category {
+	padding: 26px 0 38px;
+}
+
+.Lindon-category h3 {
+	margin: 0 0 16px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid var(--sage);
+	color: var(--sage);
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.55rem;
+}
+
+.Lindon-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+	align-items: stretch;
+	gap: 22px;
+	padding: 22px 0 34px;
+}
+
+
+.Lindon-card {
+	min-width: 0;
+	overflow: hidden;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 10px;
+	box-shadow: 0 5px 18px rgb(0 0 0 / 24%);
+	transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.Lindon-card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 25px rgb(0 0 0 / 38%);
+}
+
+.Lindon-image {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	background: #222e26;
+}
+
+.Lindon-card-content {
+	display: flex;
+	min-height: 11rem;
+	height: auto;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 18px;
+	background: var(--surface);
+}
+
+.Lindon-card h4 {
+	margin: 0;
+	color: var(--sage);
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.15rem;
+	line-height: 1.35;
+}
+
+.Lindon-description {
+	margin: 10px 0;
+	color: var(--sage);
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.Lindon-details {
+	margin: 0 0 12px;
+	padding-left: 20px;
+	color: var(--muted);
+	font-size: 0.95rem;
+	line-height: 1.55;
+}
+
+.Lindon-details li + li {
+	margin-top: 8px;
+}
